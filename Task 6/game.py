@@ -269,6 +269,19 @@ class Batyar(Enemy):
         super().__init__(name, description)
         self.beatable = False
 
+    def fight(self, weapon: str) -> int:
+        """
+        Returns amont of money as a result of fight
+
+        Args:
+            weapon (str): item that you use in fight
+
+        Returns:
+            int: amount of money as a reward
+        """
+        print(f"You can't defeat me with {weapon}")
+        return self.beatable
+
 class Friend(Character):
     """
     Character that has item, which he can give to you
