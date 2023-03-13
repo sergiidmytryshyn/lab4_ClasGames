@@ -140,6 +140,7 @@ while not DEAD:
                     print("You don't have a " + fight_with)
             else:
                 print("There is no one here to fight with")
+                break
     elif command == "help":
         # Help character, check if he is friedly
         if isinstance(inhabitant, game.Friend):
